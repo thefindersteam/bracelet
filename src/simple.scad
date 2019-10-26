@@ -1,19 +1,21 @@
 include <../config.scad> 
 
+
+
 /**/
-scale([width/2/quality,height/2/quality,depth/quality]){
+scale([width/2,height/2,depth]){
     
     difference(){
 
-        cylinder(h = 1*quality, r1 = 1*quality, r2 = 1*quality, center=true){}
+        cylinder(h = 1, r1 = 1, r2 = 1, center=true){}
 
-        cylinder(h = 1*quality, r1 = (1-thinkness)*quality, r2 = 0.9*quality, center=true){}
+        cylinder(h = 1, r1 = (1-thinkness), r2 = 0.9, center=true){}
 
-        translate([0,(1-(thinkness/2))*quality,0]){
-            cube([join*quality,thinkness*quality*10,1*quality],true){}
+        translate([0,(1-(thinkness/2)),0]){
+            cube([join,thinkness*10,1],true){}
         }
         
-        cylinder(h = 0.5*quality, r1 = (1-(thinkness/2))*quality, r2 = (1-(thinkness/2))*quality, center=true){}
+        cylinder(h = 0.73, r1 = (1-(thinkness/2)), r2 = (1-(thinkness/2)), center=true){}
     }
     
     
@@ -21,7 +23,7 @@ scale([width/2/quality,height/2/quality,depth/quality]){
 
 }
 
-translate([15,20,0]){
+translate([15,22,0]){
     rotate([0,0,-110]){
         difference(){
             
