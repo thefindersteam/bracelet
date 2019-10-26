@@ -1,15 +1,17 @@
+include <../config.scad> 
 
-
-
+/*
+TODO: Add params
+*/
 /**/
 
 
-scale([2.3,2,1]){
+scale([width,height,depth]){
 
 difference(){
 
 cylinder(h = 10, r1 = 10, r2 = 10, center=true){
-    
+  
 }
 
 cylinder(h = 10, r1 = 9, r2 = 9, center=true){
@@ -49,25 +51,3 @@ cube([4,3,4],true){
 
 
 
-
-
-
-
-
-
-
-
-
-/*
-cube([20,10,3],true){
-
-
-}
-
-translate([10,0,0]){
-    cube([5,15,3],true){
-
-
-    }
-}
-*/
