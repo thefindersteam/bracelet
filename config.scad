@@ -1,6 +1,6 @@
-width = 50;
-height = 30;
-depth=20;
+width = 80;
+height = 50;
+depth=15;
 
 thinkness=.1;
 join=0.2;

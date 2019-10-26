@@ -1,7 +1,7 @@
 include <../config.scad> 
 
 /**/
-scale([width/quality,height/quality,depth/quality]){
+scale([width/2/quality,height/2/quality,depth/quality]){
     
     difference(){
 
@@ -15,7 +15,7 @@ scale([width/quality,height/quality,depth/quality]){
             cube([join*quality,thinkness*quality*2,1*quality],true){}
         }
         
-        cylinder(h = 0.5*quality, r1 = (1-(thinkness/2))*quality, r2 = 0.9*quality, center=true){
+        cylinder(h = 0.5*quality, r1 = (1-(thinkness/2))*quality, r2 = (1-(thinkness/2))*quality, center=true){
         }
     }
     

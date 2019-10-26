@@ -2,7 +2,7 @@ include <../config.scad>
 include <./simple.scad> 
 
 /**/
-scale([width,height,depth]){
+scale([width/2,height/2,depth]){
     
 
     for (i = [1:1:(360/22.5)-1]) {
