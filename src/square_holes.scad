@@ -11,7 +11,7 @@ difference(){
 
     scale([width/2,height/2,depth]){
 
-        for (level = [-2:1:2]) {
+        for (level = [-1:1:2]) {
             for (rotation = [0:45:360]) {
                 rotate([0,0,rotation+level*22.5]){
                     translate([0,1,level*.3]){
